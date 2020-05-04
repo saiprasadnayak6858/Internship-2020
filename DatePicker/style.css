@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    padding:0;
+}
+label{
+    margin: 5px 10px;
+}
+#datepicker{
+    width:18rem;
+    margin: 0 20px 20px 20px;
+}
+#datepicker > span:hover{
+    cursor: pointer;
+}
+#datepicker i{
+    padding:3px;
+}
+.date{
+    margin:8rem 33rem 15rem;
+}
+.btn{
+    margin:0 12rem;
+}
+
+@media (max-width:900px){
+    .date{
+        margin:7rem 1rem 15rem 1rem;
+    }
+    label{
+        margin: 5px 22px;
+    }
+    .btn{
+        margin:0 7rem;
+    }
+    
+}
