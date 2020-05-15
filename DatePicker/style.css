@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding:0;
+    background: linear-gradient(90deg, rgba(0, 213, 255, 0.664) 0%, rgba(124, 67, 229, 0.603) 100%);
 }
 label{
     margin: 5px 10px;
@@ -19,7 +20,11 @@ label{
     margin:8rem 33rem 15rem;
 }
 .btn{
-    margin:0 12rem;
+    margin:0 10rem;
+    background: linear-gradient(15deg, #6C63FF, #ff7467);
+}
+.btn:hover{
+    background: linear-gradient(15deg, #ff7467, #6C63FF);
 }
 
 @media (max-width:900px){

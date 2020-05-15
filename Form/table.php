@@ -1,3 +1,13 @@
+<?php 
+   session_start();
+   if(!isset($_SESSION['username'])){
+    header("location:index.html");
+   }
+   ?>
+   <?php
+    require './dbconfig/config.php';
+    $result = mysqli_query($con_class,"SELECT * FROM class");
+   ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,48 +23,35 @@
     <link rel="stylesheet" href="./style.css">
      <!--Fontawesomoe-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-    <title>DatePicker</title>
+    <title>Table</title>
+    <style>
+        .table-row{
+            margin-top:10rem;
+        }
+    </style>
   </head>
   <body>
-      <!--DatePicker Form-->
-    <form action="#">
-    <div class="container date">
-        <div class="row form-group">
-        <label>Select Date: </label>
-        <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-            <input class="form-control" type="text" readonly />
-            <span class="input-group-addon"><i class="fa fa-calendar fa-2x"></i></span>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-primary px-5">Submit</button>
-    </div>
-    </form>
+    
     <!--Table-->
     <div class="container table-row">
         <div class="row">
         <table class="table table-bordered">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">Sl. No.</th>
-            <th scope="col">Column 1</th>
-            <th scope="col">Column 2</th>
-            <th scope="col">Column 3</th>
+            <th scope="col">Registration Number</th>
+            <th scope="col">Full Name</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Nairobi</td>
-            <td>Tokyo</td>
-            <td>Lisbon</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Berlin</td>
-            <td>Denver</td>
-            <td>Rio</td>
-          </tr>
-        
+        <?php 
+        while($row = mysqli_fetch_array($result))
+        {
+          echo '<tr>';
+           echo  '<th scope="row">' . $row['Registration_Number'] . '</th>';
+            echo '<td>' . $row['Full_Name'] . '</td>';
+         echo '</tr>';
+        }
+          ?>
         </tbody>
       </table>
     </div>

@@ -85,7 +85,7 @@ body {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-.loginWrapper .logincard .rightbox input[type="email"],
+.loginWrapper .logincard .rightbox input[type="text"],
 .loginWrapper .logincard .rightbox input[type="password"] {
   border-radius: 25px;
   background: #F3F6FB;
@@ -93,7 +93,7 @@ body {
   height: 47px;
   margin-bottom: 25px;
 }
-.loginWrapper .logincard .rightbox input[type="email"]:focus,
+.loginWrapper .logincard .rightbox input[type="text"]:focus,
 .loginWrapper .logincard .rightbox input[type="password"]:focus {
   border-color: #6C63FF;
   box-shadow: none;
@@ -147,7 +147,7 @@ body {
       text-align: center;
   } */
 
-  .loginWrapper .logincard .rightbox input[type="email"],
+  .loginWrapper .logincard .rightbox input[type="text"],
   .loginWrapper .logincard .rightbox input[type="password"] {
       background: #fff;
   }

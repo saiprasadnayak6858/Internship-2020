@@ -12,7 +12,7 @@
     <!--Custom CSS -->
     <link rel="stylesheet" href="./style.css">
 
-    <title>Login Form</title>
+    <title>Error!</title>
   </head>
   
   <body>
@@ -33,23 +33,12 @@
                  <div class="rightbox text-center">
   
                     <img src="./images/undraw_profile_pic_ic5t.png" class="rounded-circle" alt="profile image">
-                    <p>Login below to get started !</p>
-                    <!--Login Form-->
-                    <form action="login.php" method="POST">
-                       <input autocomplete="off" type="text" name="username"  class="form-control" placeholder="Username"
-                          aria-describedby="prefixId" required>
-  
-  
-                       <input autocomplete="off" type="password" name="password" class="form-control" placeholder="Password"
-                          aria-describedby="prefixId" required>
-  
-                       <p class="d-flex align-items-center pl-4"><input type="checkbox" name="" id="abc" class="mr-2" checked> <label for="abc"></label> Keep
-                          me logged in</p>
-                       <button type="submit" name="login_btn" class="btn btn-primary">Login</button>
+                    <p>Hey! You entered invalid credentials</p>
+                    <form action="error.php" method="POST">
+                      
+                       <button type="submit" name="back_btn" class="btn btn-primary mt-5">Re-enter</button>
                       
                     </form>
-  
-  
                  </div>
               </div>
            </div>
@@ -57,7 +46,12 @@
      
   
      </div>
-
+   <?php
+   if(isset($_POST['back_btn']))
+   {
+      header('location:index.html');
+   }
+   ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
