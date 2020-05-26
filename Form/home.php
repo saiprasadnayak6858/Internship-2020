@@ -45,7 +45,7 @@
                        <?php
                        if($_SESSION['isAdmin']){
                         echo '<button type="submit" name="logout_btn" class="btn btn-primary mt-5">Logout</button>';
-                        echo '<button type="submit" name="access_btn" class="btn btn-primary mt-5">Show My Class</button>';
+                        echo '<button type="submit" name="access_btn" class="btn btn-primary mt-5">Show My Classes</button>';
                        }
                         else{
                            echo '<button type="submit" name="login_btn" class="btn btn-primary mt-5">Login to View Your Class</button>';
@@ -63,7 +63,7 @@
    if(isset($_POST['logout_btn']))
    {
       session_destroy();
-      header('location:index.html');
+      header('location:index.php');
    }
    if(isset($_POST['access_btn']))
    {
@@ -71,7 +71,7 @@
    }
    if(isset($_POST['login_btn']))
    {
-          header('location:index.html');
+          header('location:index.php');
    }
 
 

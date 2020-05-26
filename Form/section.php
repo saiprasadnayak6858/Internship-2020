@@ -1,110 +1,52 @@
+
 <?php 
    session_start();
-   if(!isset($_SESSION['username'])){
-    echo "<p>Please Log In First</p>";
-    header( "refresh:3; url=index.html" ); 
+   if(!$_SESSION['isAdmin'])
+   {
+      header("Location:home.php");
    }
+   
    ?>
-<!DOCTYPE html>
 
- <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Button</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="./style.css">
-        <!--Google Font -->
-        <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-        <!--Fontawesomoe-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-    </head>
-  <style>
-    *, *:before, *:after {
-    box-sizing: border-box;
-  }
-  body {
-    background: rgb(240, 223, 223);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Noto Sans', sans-serif;
-  }
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  i{
-      margin-right:6px;
-  }
-  
-  a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #6C63FF;
-    border-radius: 10px;
-    height: 2.8em;
-    width: 16rem;
-    outline: none;
-    overflow: hidden;
-    color: #6C63FF;
-    -webkit-transition: color 0.3s 0.1s ease-out;
-    transition: color 0.3s 0.1s ease-out;
-    text-align: center;
-    line-height: 250%;
-  }
-  a::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    content: '';
-    border-radius: 50%;
-    display: block;
-    width: 25rem;
-    height: 20em;
-    line-height: 20em;
-    left: -5em;
-    text-align: center;
-    -webkit-transition: box-shadow 0.5s ease-out;
-    transition: box-shadow 0.5s ease-out;
-    z-index: -1;
-  }
-  a:hover {
-    color: #fff;
-  }
-  a:hover::before {
-    box-shadow: inset 0 0 0 10em #6C63FF;
-  }
-  .btn-it{
-    position: absolute;
-    margin-left:28rem;
-  }
-  .btn-cse{
-    position: absolute;
-    margin-left:50rem;
-  }
-  @media (max-width:768px){
-    .btn-it{
-    position: relative;
-    margin-top:28rem;
-  }
-  .btn-cse{
-    position: absolute;
-    margin-top:50rem;
-  }
-  }
-    </style>
-    <body>
-    <div class="container">
-      <a href="./table.php" target="_blank" class="btn-cse"> <i class="fa fa-github"></i>Computer Engineering</a>
-      <a href="./table.php" target="_blank" class="btn-it"> <i class="fa fa-github"></i>Information Technology</a>
-      </div>
-    </body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Your Classes</title>
+    <style>
+      <?php include './style.css'; ?>
+
+      button{
+        margin: 20rem 1rem;
+      }
+      .btn-1{
+        margin-left:30rem;
+      }
+      @media (max-width:500px)
+      {
+        .btn-1{
+          margin:10rem  2.5rem;
+        }
+        .btn-2{
+          margin:1rem  5rem;
+        }
+      }
+      </style>
+  </head>
+  <body>
+  <button type="button" onclick="location.href = 'table.php'" class="btn btn-outline-primary btn-lg btn-1">Computer Science & Engineering</button>
+  <button type="button" onclick="location.href = 'table.php'" class="btn btn-outline-primary btn-lg btn-2">Information Technology</button>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>

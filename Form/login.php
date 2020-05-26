@@ -15,12 +15,12 @@
         {
             $_SESSION['username'] = $username;
             $_SESSION['isAdmin'] = true;
-            $_SESSION['flash'] = 'Please login to continue!';
-            header('location:home.php');
+            header('location:home.php?success=login');
 
         }
         else{
-           header('location:error.php');
+           
+            header("Location:index.php?error=login");
         }
     }
 ?>

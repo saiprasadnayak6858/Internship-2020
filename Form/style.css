@@ -10,6 +10,7 @@ body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 16px !important;
+  
 }
 
 .loginWrapper {
@@ -128,24 +129,7 @@ body {
       height: auto;
   }
 
-  /* .loginWrapper .logincard .leftbox .circle {
-      transform: inherit;
-      border-radius: inherit;
-      top: inherit;
-      left: inherit;
-      border: 0 none;
-      width: 100%;
-  } */
-
-  /* .loginWrapper .logincard .leftbox .leftboxContent {
-      position: inherit;
-      top: inherit;
-      left: inherit;
-      transform: inherit;
-      width: 100%;
-      padding: 40px 40px 0;
-      text-align: center;
-  } */
+  
 
   .loginWrapper .logincard .rightbox input[type="text"],
   .loginWrapper .logincard .rightbox input[type="password"] {
@@ -167,6 +151,54 @@ body {
     height: 100vh;
     width:100vw;
     padding-top:8rem;
+  }
+
+}
+.table-row{
+  margin-top:6rem;
+}
+
+/*Datepicker*/
+.date label{
+  margin: 5px 10px;
+}
+#datepicker{
+  width:18rem;
+  margin: 0 20px 20px 20px;
+}
+#datepicker > span:hover{
+  cursor: pointer;
+}
+#datepicker i{
+  padding:3px;
+}
+.date{
+  margin:4rem 33rem 15rem;
+}
+.date .btn{
+  margin:0 10rem;
+  background: linear-gradient(15deg, #6C63FF, #ff7467);
+}
+.date .btn:hover{
+  background: linear-gradient(15deg, #ff7467, #6C63FF);
+
+}
+.input-group-addon{
+  cursor: pointer;
+}
+
+@media (max-width:900px){
+  .date{
+      margin:7rem 1rem 15rem 1rem;
+  }
+  .date label{
+      margin: 5px 22px;
+  }
+  .date .btn{
+      margin:0 7rem;
+  }
+  .absent-btn{
+    margin-top:16px;
   }
 
 }
