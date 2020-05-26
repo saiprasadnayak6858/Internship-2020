@@ -10,7 +10,7 @@
 
 - Copy the folder named project into htdocs folder of your xampp folder(Make sure you have xampp installed)
 - Start the Apache web server and MySQL server through xampp control panel
-- Open the localhost in your web browser
+- Open [localhost/project/index.php]() in your web browser
 
 ![](./screenshots/login.png)
 
