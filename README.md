@@ -4,9 +4,9 @@
 
 ---
 
-###This project is about creating a simplified attendance system using PHP and MySQL
+### This project is about creating a simplified attendance system using PHP and MySQL
 
-##Installation
+## Installation
 
 - Copy the folder named project into htdocs folder of your xampp folder(Make sure you have xampp installed)
 - Start the Apache web server and MySQL server through xampp control panel
@@ -14,7 +14,7 @@
 
 ![](./screenshots/login.png)
 
-###Database
+### Database
 
 - The database folder consists of the sql source files that I used for this project
 
