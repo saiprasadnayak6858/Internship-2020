@@ -12,7 +12,7 @@
 - Start the Apache web server and MySQL server through xampp control panel
 - Open [localhost/project/index.php]() in your web browser
 
-![](./screenshots/login.png)
+![](https://raw.githubusercontent.com/saiprasadnayak6858/Internship-2020/assets/screenshots/login.png)
 
 ### Database
 
