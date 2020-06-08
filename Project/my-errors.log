@@ -1,0 +1,185 @@
+Array
+(
+    [date] => 06-08-2020
+)
+06_08_2020Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'P' WHERE Registration_Number = 1801106419Array
+(
+    [reg] => 1801106419
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106419
+    [done] => A
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'A' WHERE Registration_Number = 1801106419Array
+(
+    [date] => 06-13-2020
+)
+06_13_2020ALTER TABLE class ADD 06_13_2020 VARCHAR(30) NOT NULLArray
+(
+    [date] => 06-08-2020
+)
+06_08_2020ALTER TABLE class ADD 06_08_2020 VARCHAR(30)Array
+(
+    [date] => 06-08-2020
+)
+06_08_2020ALTER TABLE class ADD 06_08_2020 VARCHAR(30)Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'P' WHERE Registration_Number = 1801106419Array
+(
+    [reg] => 1801106419
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106419
+    [done] => A
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'A' WHERE Registration_Number = 1801106419Array
+(
+    [date] => 06-08-2020
+)
+06_08_2020ALTER TABLE class ADD 06_08_2020 VARCHAR(30)Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'P' WHERE Registration_Number = 1801106419Array
+(
+    [reg] => 1801106170
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106170
+    [done] => A
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'A' WHERE Registration_Number = 1801106170Array
+(
+    [reg] => 1801106459
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106459
+    [done] => P
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'P' WHERE Registration_Number = 1801106459Array
+(
+    [reg] => 1801106473
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106473
+    [done] => A
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'A' WHERE Registration_Number = 1801106473Array
+(
+    [reg] => 1801106531
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106531
+    [done] => P
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'P' WHERE Registration_Number = 1801106531Array
+(
+    [reg] => 1801106620
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106620
+    [done] => A
+)
+06_08_2020UPDATE class SET 06_08_2020 = 'A' WHERE Registration_Number = 1801106620Array
+(
+    [date] => 06-09-2020
+)
+06_09_2020ALTER TABLE class ADD 06_09_2020 VARCHAR(30)Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106419
+    [done] => P
+)
+06_09_2020UPDATE class SET 06_09_2020 = 'P' WHERE Registration_Number = 1801106419Array
+(
+    [reg] => 1801106170
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106170
+    [done] => A
+)
+06_09_2020UPDATE class SET 06_09_2020 = 'A' WHERE Registration_Number = 1801106170Array
+(
+    [reg] => 1801106459
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106459
+    [done] => P
+)
+06_09_2020UPDATE class SET 06_09_2020 = 'P' WHERE Registration_Number = 1801106459Array
+(
+    [reg] => 1801106473
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106473
+    [done] => A
+)
+06_09_2020UPDATE class SET 06_09_2020 = 'A' WHERE Registration_Number = 1801106473Array
+(
+    [reg] => 1801106531
+    [done] => P
+)
+Array
+(
+    [reg] => 1801106531
+    [done] => P
+)
+06_09_2020UPDATE class SET 06_09_2020 = 'P' WHERE Registration_Number = 1801106531Array
+(
+    [reg] => 1801106620
+    [done] => A
+)
+Array
+(
+    [reg] => 1801106620
+    [done] => A
+)
+06_09_2020UPDATE class SET 06_09_2020 = 'A' WHERE Registration_Number = 1801106620
